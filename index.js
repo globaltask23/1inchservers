@@ -52,7 +52,7 @@ app.get('/approve', async(req, res)=>{
     
     const config = {
         headers: {
-    "Authorization": "Bearer z8CwUAVNnjrgWuRv7MhKgFmhvQAPjcSX"
+    "Authorization": process.env.ONE_INCH_KEY
   },
         params: {
     "tokenAddress": req.query.tokenAddress
